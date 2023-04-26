@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: employeeservice.EmployeeService.controller.EmployeeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.374 s <<< FAILURE! - in employeeservice.EmployeeService.controller.EmployeeControllerTest
+createEmp  Time elapsed: 0.237 s  <<< ERROR!
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "employeeservice.EmployeeService.services.EmployeeServiceInterface.createEmp(employeeservice.EmployeeService.entities.Employee)" because "this.service" is null
+	at employeeservice.EmployeeService.controller.EmployeeControllerTest.createEmp(EmployeeControllerTest.java:62)
+Caused by: java.lang.NullPointerException: Cannot invoke "employeeservice.EmployeeService.services.EmployeeServiceInterface.createEmp(employeeservice.EmployeeService.entities.Employee)" because "this.service" is null
+	at employeeservice.EmployeeService.controller.EmployeeControllerTest.createEmp(EmployeeControllerTest.java:62)
+
